@@ -1,0 +1,61 @@
+﻿
+    /**
+     * Asigna la primera oficina desocupada a una empresa usando los datos dados por parámetro. <br>
+     * <b>pre</b>: La lista de oficinas está inicializada y todas las oficinas están creadas. <br>
+     * La empresa no tiene otra oficina ocupada. <br>
+     * <b>post</b>: La oficina ha sido ocupada. <br>
+     * @param pNombreEmpresa Nombre de la empresa que ocupará la oficina. pNombreEmpresa != null && pNombreEmpresa != "".
+     * @param pNITEmpresa NIT de la empresa. pNIT >= 0.
+     * @throws Exception Si todas las oficinas ya estaban ocupadas.
+     */
+    public void ocuparOficina( String pNombreEmpresa, int pNITEmpresa ) throws Exception
+    {
+        //TODO Parte4 PuntoA: Complete el método ocuparOficina según la documentación dada.
+    }
+
+    /**
+     * Desocupa la oficina que ocupa la empresa con el nombre dado.<br>
+     * <b>pre</b>: - La lista de oficinas está inicializada. <br>
+     *             - La empresa tiene una oficina ocupada en el piso.<br>
+     * <b>post</b>: La oficina ha sido desocupada.
+     * @param pNombreEmpresa Nombre de la empresa que desocupará la oficina. pNombreEmpresa != null, pNombreEmpresa != "".
+     * @throws Exception - Si la empresa tiene empleados adentro del parque empresarial.
+     */
+    public void desocuparOficina( String pNombreEmpresa ) throws Exception
+    {
+      //TODO Parte4 PuntoB: Complete el método desocuparOficina según la documentación dada.
+    }
+    
+    /**
+     * Busca la oficina en la que trabaja el empleado con la cédula dada por parámetro.
+     * @param pCedula Cédula del empleado. pCedula != "" && pCedula != null.
+     * @return Oficina en la que trabaja el empleado o null si el empleado no trabaja en el piso. 
+     */
+    public Oficina buscarOficinaEmpleado(String pCedula){
+        Oficina respuesta = null;
+        for( int i = 0; i < oficinas.length && respuesta == null; i++ )
+        {
+            Oficina oficina = oficinas[ i ];
+            
+            if(oficina.trabajaEnEmpresa( pCedula ))
+	    {
+                respuesta = oficina;
+            }
+        }
+        return respuesta;
+    }
+
+    // TODO Parte4 PuntoC: Crear el contrato del método buscarOficinaEmpresa.
+    public Oficina buscarOficinaEmpresa( String pNombreEmpresa )
+    {
+        Oficina respuesta = null;
+        for(int j=0; j<oficinas.length && respuesta == null; j++)
+        {
+            Oficina oficina = oficinas[ j ];
+            if(oficina.estaOcupadaPor( pNombreEmpresa ))
+            {
+                respuesta = oficina;
+            }
+        }
+        return respuesta;
+    }

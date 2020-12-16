@@ -1,0 +1,102 @@
+﻿
+    //TODO Parte5 PuntoA: Crear el contrato del método buscarOficinaEmpresa
+    public Oficina buscarOficinaEmpresa( String pNombreEmpresa )
+    {
+        Oficina respuesta = null;
+        for(int i=0; i<pisos.size( ) && respuesta == null; i++)
+        {
+            Piso piso = pisos.get( i );
+            respuesta=piso.buscarOficinaEmpresa( pNombreEmpresa );
+        }
+
+        return respuesta;
+    }
+    
+
+    /**
+     * Asigna la oficina a una empresa en el piso dado.<br>
+     * <b>pre</b>: La lista de pisos está inicializada, el piso ingresado existe en el edificio.<br>
+     * <b>post</b>: Si existían oficinas disponibles en el piso seleccionado, la empresa ingresada por parámetro ocupa una oficina en el piso.
+     *              Si no existían oficinas disponibles en el piso seleccionado, la empresa ingresada por parámetro ocupa cualquier oficina disponible del mismo tamaño.
+     * @param pNumeroPiso Número del piso donde se desea ocupar la oficina. pNumeroPiso > 0 && pNumeroPiso <= pisos.size().
+     * @param pNombreEmpresa Nombre de la empresa que desea ocupar la oficina. pNombreEmpresa != null && pNombreEmpresa != "".
+     * @param pNITEmpresa Número del NIT de la empresa. pNITEmpresa >= 0.
+     * @throws Exception - Si la empresa ya tiene una oficina en el edificio.
+     *                   - Si no se pudo ocupar una oficina en el piso requerido y se le asignó una oficina del mismo tamaño en otro piso.
+     *                   - Si no se pudo ocupar una oficina en el piso y no hay más oficinas del mismo tamaño libres en el edificio.
+     */
+     //TODO Parte5 PuntoB: Modificar la signatura y la implementación del método ocuparOficinaEnPiso para que cumpla con la documentación dada.
+
+
+    /**
+     * Desocupa la oficina que ocupa la empresa con el nombre dado por parámetro. <br>
+     * <b>pre</b>: La lista de pisos está inicializada.<br>
+     * <b>post</b>: Si la empresa tenía una oficina ocupada, la desocupó.
+     * @param pNombreEmpresa Nombre de la empresa que ocupa la oficina. pNombreEmpresa != null && pNombreEmpresa != "".
+     * @throws Exception - Si la empresa no tiene oficina en el edificio.
+     *                   - Si la empresa tiene empleados adentro del parque empresarial.
+     */
+    //TODO Parte5 PuntoC: Modificar la signatura y la implementación del método desocuparOficina para que cumpla con la documentación dada.
+  
+    /**
+     * Agrega un nuevo empleado con los datos dados a la empresa con el nombre ingresado por parámetro.
+     * <b>pre:</b>La lista de pisos está inicializada.</br>
+     * <b>post:</b>Se agregó un nuevo empleado a la empresa.
+     * @param pNombreEmpresa Nombre de la empresa. pNombreEmpresa != "" && pNombreEmpresa != null.
+     * @param pNombreEmpleado Nombre del empleado. pNombreEmpleado != "" && pNombreEmpleado != null.
+     * @param pCedulaEmpleado Cédula del empleado. pCedulaEmpleado != "" && pCedulaEmpleado != null.
+     * @throws Exception - Si la empresa no tiene oficina en el edificio.
+     *                   - Si ya existe un empleado en el edificio con la misma cedula.
+     *                   - Si la oficina no tiene espacio suficiente para agregar al empleado. Es decir, en caso de agregar un nuevo empleado no cumpliría con la restricción de área mínima por empleado.
+     */
+    public void agregarEmpleado(String pNombreEmpresa, String pNombreEmpleado, String pCedulaEmpleado) throws Exception{
+        //TODO Parte5 PuntoD: Completar el método según la documentación dada. 
+    }
+
+    /**
+     * Elimina el empleado con la cédula dada de la empresa con el nombre ingresado por parámetro. <br>
+     * <b>pre:</b>La lista de pisos está inicializada.<br>
+     * <b>post:</b>Se eliminó el empleado de la empresa.
+     * @param pCedulaEmpleado Cédula del empleado. pCedulaEmpleado != "" && pCedulaEmpleado != null.
+     * @throws Exception - Si no existe un empleado con la cédula dada.
+     *                   - Si el empleado que se quiere eliminar está adentro del edificio.
+     */
+    //TODO Parte5 PuntoE: Declarar e implementar el método eliminarEmpleado según la documentación dada.
+    
+    //TODO Parte5 PuntoF: Crear el contrato del método registrarIngreso
+    public void registrarIngreso( String pCedulaEmpleado) throws Exception 
+    {
+        boolean registrado = false;
+        for(int i=0;i<pisos.size( ) && !registrado;i++)
+	{
+            Oficina oficina = pisos.get( i ).buscarOficinaEmpleado( pCedulaEmpleado );
+            if(oficina!=null)
+	    {
+                oficina.darEmpresa( ).buscarEmpleado( pCedulaEmpleado ).registrarIngreso( );
+                registrado = true;
+            }
+        }
+        if(!registrado)
+	{
+            throw new Exception("No existe el empleado con cedula "+pCedulaEmpleado);
+        }
+    }
+
+    //TODO Parte5 PuntoG: Crear el contrato del método registrarIngreso
+    public void registrarSalida(String pCedulaEmpleado) throws Exception
+    {
+        boolean registrado = false;
+        for(int i=0;i<pisos.size( ) && !registrado;i++)
+	{
+            Oficina oficina = pisos.get( i ).buscarOficinaEmpleado( pCedulaEmpleado );
+            if(oficina!=null)
+	    {
+                oficina.darEmpresa( ).buscarEmpleado( pCedulaEmpleado ).registrarSalida( );
+                registrado = true;
+            }
+        }
+        if(!registrado)
+	{
+            throw new Exception("No existe el empleado con cedula "+pCedulaEmpleado);
+        }
+    }

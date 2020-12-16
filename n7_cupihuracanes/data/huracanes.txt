@@ -1,0 +1,59 @@
+#---------------------------------------------------------
+# Huracanes del sistema
+#---------------------------------------------------------
+
+total.huracanes = 9
+
+huracan1.nombre = Arthur
+huracan1.categoria = 2
+huracan1.velocidad = 155
+huracan1.costoDanios = 52.5
+huracan1.imagen = .//data//imagenes//arthur.jpg
+
+huracan2.nombre = Gonzalo
+huracan2.categoria = 4
+huracan2.velocidad = 230
+huracan2.costoDanios = 250
+huracan2.imagen = .//data//imagenes//gonzalo.jpg
+
+huracan3.nombre = Fay
+huracan3.categoria = 1
+huracan3.velocidad = 120
+huracan3.costoDanios = 3.8
+huracan3.imagen = .//data//imagenes//fay.jpg
+
+huracan4.nombre = Genevieve
+huracan4.categoria = 5
+huracan4.velocidad = 260
+huracan4.costoDanios = 0
+huracan4.imagen = .//data//imagenes//genevieve.jpg
+
+huracan5.nombre = Bertha
+huracan5.categoria = 1
+huracan5.velocidad = 130
+huracan5.costoDanios = 0.1
+huracan5.imagen = .//data//imagenes//bertha.jpg
+
+huracan6.nombre = Ingrid
+huracan6.categoria = 1
+huracan6.velocidad = 140
+huracan6.costoDanios = 1500
+huracan6.imagen = .//data//imagenes//ingrid.jpg
+
+huracan7.nombre = Norbert
+huracan7.categoria = 3
+huracan7.velocidad = 205
+huracan7.costoDanios = 100
+huracan7.imagen = .//data//imagenes//norbert.jpg
+
+huracan8.nombre = Iselle
+huracan8.categoria = 4
+huracan8.velocidad = 220
+huracan8.costoDanios = 66
+huracan8.imagen = .//data//imagenes//iselle.jpg
+
+huracan9.nombre = Odille
+huracan9.categoria = 4
+huracan9.velocidad = 215
+huracan9.costoDanios = 1050
+huracan9.imagen = .//data//imagenes//odille.jpg

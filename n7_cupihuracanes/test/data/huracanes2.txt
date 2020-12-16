@@ -1,0 +1,59 @@
+#---------------------------------------------------------
+# Huracanes del sistema
+#---------------------------------------------------------
+
+total.huracanes = 9
+
+huracan1.nombre = Bill
+huracan1.categoria = 2
+huracan1.velocidad = 95
+huracan1.costoDanios = 50
+huracan1.imagen = .//data//bill.png
+
+huracan2.nombre = Charley
+huracan2.categoria = 4
+huracan2.velocidad = 240
+huracan2.costoDanios = 18000
+huracan2.imagen = .//data//bill.png
+
+huracan3.nombre = Dean
+huracan3.categoria = 5
+huracan3.velocidad = 280
+huracan3.costoDanios = 2200
+huracan3.imagen = .//data//dean.png
+
+huracan4.nombre = Dolly
+huracan4.categoria = 3
+huracan4.velocidad = 155
+huracan4.costoDanios = 1500
+huracan4.imagen = .//data//dolly.png
+
+huracan5.nombre = Emily
+huracan5.categoria = 4
+huracan5.velocidad = 260
+huracan5.costoDanios = 550
+huracan5.imagen = .//data//emily.png
+
+huracan6.nombre = Isabel
+huracan6.categoria = 5
+huracan6.velocidad = 270
+huracan6.costoDanios = 4220
+huracan6.imagen = .//data//isabel.png
+
+huracan7.nombre = Katrina
+huracan7.categoria = 5
+huracan7.velocidad = 280
+huracan7.costoDanios = 89000
+huracan7.imagen = .//data//katrina.png
+
+huracan8.nombre = Rita
+huracan8.categoria = 5
+huracan8.velocidad = 285
+huracan8.costoDanios = 12470
+huracan8.imagen = .//data/rita.png
+
+huracan9.nombre = Wilma
+huracan9.categoria = 5
+huracan9.velocidad = 295
+huracan9.costoDanios = 32000
+huracan9.imagen = .//data/wilma.png

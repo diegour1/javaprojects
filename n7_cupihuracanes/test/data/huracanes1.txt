@@ -1,0 +1,59 @@
+#---------------------------------------------------------
+# Huracanes del sistema
+#---------------------------------------------------------
+
+total.huracanes = 9
+
+huracan1.nombre = 1
+huracan1.categoria = 1
+huracan1.velocidad = 1
+huracan1.costoDanios = 1
+huracan1.imagen = 1
+
+huracan2.nombre = 2
+huracan2.categoria = 2
+huracan2.velocidad = 2
+huracan2.costoDanios = 2
+huracan2.imagen = 2
+
+huracan3.nombre = 3
+huracan3.categoria = 3
+huracan3.velocidad = 3
+huracan3.costoDanios = 3
+huracan3.imagen = 3
+
+huracan4.nombre = 4
+huracan4.categoria = 4
+huracan4.velocidad = 4
+huracan4.costoDanios = 4
+huracan4.imagen = 4
+
+huracan5.nombre = 5
+huracan5.categoria = 5
+huracan5.velocidad = 5
+huracan5.costoDanios = 5
+huracan5.imagen = 5
+
+huracan6.nombre = 6
+huracan6.categoria = 6
+huracan6.velocidad = 6
+huracan6.costoDanios = 6
+huracan6.imagen = 6
+
+huracan7.nombre = 7
+huracan7.categoria = 7
+huracan7.velocidad = 7
+huracan7.costoDanios = 7
+huracan7.imagen = 7
+
+huracan8.nombre = 8
+huracan8.categoria = 8
+huracan8.velocidad = 8
+huracan8.costoDanios = 8
+huracan8.imagen = 8
+
+huracan9.nombre = 9
+huracan9.categoria = 9
+huracan9.velocidad = 9
+huracan9.costoDanios = 9
+huracan9.imagen = 9

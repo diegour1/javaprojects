@@ -1,0 +1,9 @@
+La imagen bill.png fue extraída de: www.lesjones.com
+La imagen charley.png fue extraída de: www.theage.com.au
+La imagen dean.png fue extraída de: www.accuweather.com
+La imagen dolly.png fue extraída de: www.daylife.com
+La imagen emily.png fue extraída de: abcnews.go.com
+La imagen isabel.png fue extraída de: www.ussplymouthrock.com
+La imagen katrina.png fue extraída de: www.cubahurricanes.org
+La imagen rita.png fue extraída de: pro.wanadoo.fr
+La imagen wilma.png fue extraída de: www.waynebesen.com

@@ -1,0 +1,58 @@
+﻿    /**
+     * Crea una empresa con su nombre, NIT y una lista de empleados vacía. <br>
+     * <b>post: </b> Los atributos: nombre y nit quedaron inicializados con los valores que llegaron por parámetro.
+     *               Se inicializó la lista de empleados como una lista vacía. <br>
+     * @param pNombre Nombre de la empresa. pNombre != null y pNombre != "".
+     * @param pNIT NIT de la empresa. pNIT >=0 .
+     */
+    public Empresa( String pNombre, int pNit )
+    {
+    	 //TODO Parte2 PuntoA: Completar el método según la documentación dada.
+    }
+
+
+    /**
+     * Retorna la lista de emplados de la empresa.<br>
+     * <b>pre:</b> La lista de empleados se encuentra inicializada.
+     * @return Lista de empleados.
+     */
+    public ArrayList<Empleado> darEmpleados()
+    {
+        //TODO Parte2 PuntoB: Completar el método según la documentación dada.
+    }
+
+    //TODO Parte2 PuntoC: Modifique el método darNumeroEmpleados para que se adapte a la nueva estructura de la clase Empresa, pero mantenga las condiciones de su contrato.
+   
+    /**
+     * Busca el empleado de la empresa al que pertenece la cédula dada por parámetro.
+     * @param pCedula Cedula del empleado. pCedula != "".
+     * @return Empleado de la empresa con la cedula dada por parámetro.
+     * @throws Exception Si no se encontró ningún empleado con esa cédula.
+     */
+    public Empleado buscarEmpleado(String pCedula) throws Exception
+    {
+        //TODO Parte2 PuntoD: Completar el método según la documentación dada. 
+    }
+
+    /**
+     * Agrega un nuevo empleado a la empresa con un nombre y una cedula dada.
+     * <b>pre: </b> La lista de empleados se encuentra inicializada.<br>
+     * <b>post:</b> Se agregó un nuevo empleado a la empresa. 
+     * @param pNombre El nombre del empleado. pNombre != "".
+     * @param pCedula La cedula del empleado. pCedula != "".
+     * @throws Exception Si ya existe un empleado en la empresa con la cedula dada por parámetro.
+     */
+    //TODO Parte2 PuntoE: Declarar e implementar el método agregarEmpleado según la documentación dada.
+   
+   
+    //TODO Parte2 PuntoF: Crear el contrato del método
+    public Empleado eliminarEmpleado(String pCedula) throws Exception 
+    {
+        Empleado empleado = buscarEmpleado( pCedula );
+        if(empleado.estaAdentro( ))
+        {
+            throw new Exception("El empleado sigue dentro del parque empresarial." );
+        }
+        empleados.remove( empleado );
+        return empleado;
+    }

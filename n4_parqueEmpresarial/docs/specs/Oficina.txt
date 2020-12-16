@@ -1,0 +1,63 @@
+﻿
+    /**
+     * Asigna la oficina a una empresa con los datos dados por parámetro. <br>
+     * <b>post</b>: Se creó y se asignó la empresa con la información dada y se cambió el estado de la oficina para que no esté libre.
+     * @param pNombreEmpresa Nombre de al empresa que va a ocupar la oficina. pNombreEmpresa != null && pNombreEmpresa != "".<br>
+     * @param pNITEmpresa NIT de la empresa. pNIT >= 0.
+     * @throws Exception Si la oficina está ocupada.
+     */
+    public void ocuparOficina( String pNombreEmpresa, int pNITEmpresa ) throws Exception
+    {
+        //TODO Parte3 PuntoA: Completar el método según la documentación dada.
+    }
+
+    /**
+     * Desocupa la oficina. <br>
+     * <b>post:</b> Empresa es igual a null y se cambió el estado de la oficina para que esté libre.
+     * @throws Exception - Si la oficina esta libre.
+     *                   - Si la empresa tiene empleados adentro del parque empresarial.
+     */
+    public void desocuparOficina( ) throws Exception
+    {
+        //TODO Parte3 PuntoB: Completar el método según la documentación dada.
+    }
+
+    /**
+     * Indica si un empleado trabaja en la empresa que ocupa la oficina.
+     * @param pCedula Cédula del empleado que se está buscando. pCedula != null && pCedula != "".
+     * @return True si en la empresa que ocupa la oficina trabaja un empleado con la cédula dada, false en caso contrario.
+     */
+    public boolean trabajaEnEmpresa(String pCedula)
+    {
+        boolean respuesta = false;
+        for(int i=0;estaOcupada( ) && i<empresa.darEmpleados( ).size( ) && !respuesta; i++)
+        {
+            respuesta = empresa.darEmpleados( ).get( i ).darCedula( ).equals( pCedula );
+        }
+        return respuesta;
+    }
+
+    /**
+     * Agrega un empleado a la empresa que ocupa la oficina.
+     * <b>pre:</b>La oficina está ocupada por una empresa.
+     * <b>post:</b> Se agregó un nuevo empleado a la empresa que ocupa la oficina. 
+     * @param pNombre El nombre del empleado. pNombre != "".
+     * @param pCedula La cedula del empleado. pCedula != "".
+     * @return El Empleado que se agregó a la empresa.
+     * @throws Exception - Si la oficina no tiene espacio suficiente para agregar al empleado. Es decir, en caso de agregar un nuevo empleado no cumpliría con la restricción de área mínima por empleado.
+     *                   - Si ya existe un empleado en la empresa con la cedula dada por parámetro.
+     */
+    //TODO Parte3 PuntoC: Declarar e implementar el método agregarEmpleado segun la documentación dada y el modelo del mundo.
+   
+   
+    /**
+     * Elimina el empleado con cédula ingresada por parámetro de la empresa que ocupa la oficina.
+     * @param pCedula Cédula del empleado. pCedula != "" && pCedula != null.
+     * @throws Exception - Si en la empresa que ocupa la oficina no existe un empleado con la cédula dada.
+     *                   - Si el empleado que se quiere eliminar está adentro del edificio.
+     */
+    public void eliminarEmpleado(String pCedula) throws Exception 
+    {
+        empresa.eliminarEmpleado( pCedula );
+    }
+    
